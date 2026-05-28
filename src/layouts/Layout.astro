@@ -13,7 +13,7 @@ const { title, description = i.home.heroDesc } = Astro.props;
 
 // Decode HTML entities for use in meta tags (attributes get double-escaped)
 const decodeEntities = (s: string) => s
-  .replace(/&mdash;/g, '—')
+  .replace(/&mdash;/g, '\u2014')
   .replace(/&rsquo;/g, '\u2019')
   .replace(/&amp;/g, '&');
 const metaTitle = decodeEntities(title);
@@ -50,7 +50,7 @@ const canonicalURL = new URL(canonicalPath, site).href.replace(/\/+$/, '') || si
     <meta name="twitter:title" content={metaTitle} />
     <meta name="twitter:description" content={metaDesc} />
     <link rel="icon" type="image/png" href="/fodylabs-icon.png" />
-    <title set:html={metaTitle} />
+    <title>{metaTitle}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
