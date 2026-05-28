@@ -14,11 +14,11 @@ const locales = Object.keys(translations);
 const localeNames: Record<string, string> = {
   en: 'English',
   de: 'Deutsch',
-  ru: '–ÛÒÒÍËÈ',
-  uk: '”Í‡øÌÒ¸Í‡',
-  es: 'Espa?ol',
+  ru: '–†—É—Å—Å–∫–∏–π',
+  uk: '–£–∫—Ä–∞—ó–Ω—Å—å–∫–∞',
+  es: 'Espa√±ol',
   it: 'Italiano',
-  fr: 'Fran?ais',
+  fr: 'Fran√ßais',
 };
 
 export function getLangFromUrl(url: URL): string {
@@ -33,8 +33,8 @@ export function t(lang: string): typeof en {
 
 export function localePath(lang: string, path: string): string {
   const cleanPath = path.replace(/^\//, '');
-  if (lang === defaultLocale) return `/${cleanPath}`;
-  return `/${lang}/${cleanPath}`;
+  if (lang === defaultLocale) return "/" + cleanPath;
+  return "/" + lang + "/" + cleanPath;
 }
 
 export { locales, localeNames, defaultLocale };
