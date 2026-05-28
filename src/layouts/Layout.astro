@@ -50,7 +50,7 @@ const canonicalURL = new URL(canonicalPath, site).href.replace(/\/+$/, '') || si
     <meta name="twitter:title" content={metaTitle} />
     <meta name="twitter:description" content={metaDesc} />
     <link rel="icon" type="image/png" href="/fodylabs-icon.png" />
-    <title>{title}</title>
+    <title set:html={metaTitle} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
