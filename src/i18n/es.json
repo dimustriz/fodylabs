@@ -60,7 +60,9 @@
     "timeline2005": "Transici?n a .NET &mdash; WinForms, WPF, ASP.NET",
     "timeline2015": "Primeros proyectos m?viles con Xamarin",
     "timeline2022": "Adopci?n de .NET MAUI para desarrollo m?vil multiplataforma",
-    "timeline2024": "Integraci?n de herramientas de IA en el flujo de trabajo diario"
+    "timeline2024": "Integraci?n de herramientas de IA en el flujo de trabajo diario",
+    "fodyTitle": "?Por qu? Fody?",
+    "fodyText": "El fody es un peque?o y colorido p?jaro nativo de las islas del Oc?ano ?ndico. Los vemos cada d?a aqu? en las Seychelles, donde vivimos y trabajamos. Brillante, ingenioso y perfectamente adaptado a la vida insular &mdash; el fody encajaba de forma natural con un estudio que crea software inteligente y ligero desde una base tropical, sirviendo a clientes en todo el mundo."
   },
   "contact": {
     "title": "Contacto &mdash; Fody Labs",
@@ -70,7 +72,7 @@
     "intro": "?Tiene un proyecto? Escr?banos &mdash; le respondemos.",
     "emailTitle": "Correo",
     "locationTitle": "Ubicaci?n",
-    "locationText": "Trabajamos en todo el mundo, con sede en Europa",
+    "locationText": "Trabajamos en todo el mundo, con sede en las Seychelles",
     "responseTitle": "Tiempo de respuesta",
     "responseText": "Normalmente en menos de 24 horas",
     "formName": "Nombre",

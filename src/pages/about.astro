@@ -72,6 +72,13 @@ const i = t(lang);
       </div>
     </div>
   </section>
+
+  <section class="section fody-section">
+    <div class="fody-card">
+      <h2 class="about-heading">{i.about.fodyTitle}</h2>
+      <p class="about-text" set:html={i.about.fodyText} />
+    </div>
+  </section>
 </Layout>
 
 <style>
@@ -174,5 +181,25 @@ const i = t(lang);
     color: var(--color-text-muted);
     font-size: 0.9rem;
     line-height: 1.5;
+  }
+
+  .fody-section {
+    padding-bottom: 4rem;
+  }
+
+  .fody-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 2.5rem;
+    max-width: 720px;
+  }
+
+  .fody-card .about-heading {
+    margin-bottom: 1rem;
+  }
+
+  .fody-card .about-text {
+    margin-bottom: 0;
   }
 </style>

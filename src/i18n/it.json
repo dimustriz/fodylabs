@@ -60,7 +60,9 @@
     "timeline2005": "Passaggio a .NET &mdash; WinForms, WPF, ASP.NET",
     "timeline2015": "Primi progetti mobile con Xamarin",
     "timeline2022": "Adozione di .NET MAUI per lo sviluppo mobile multipiattaforma",
-    "timeline2024": "Strumenti di IA integrati nel flusso di lavoro quotidiano"
+    "timeline2024": "Strumenti di IA integrati nel flusso di lavoro quotidiano",
+    "fodyTitle": "Perch? Fody?",
+    "fodyText": "Il fody ? un piccolo e vivace uccello originario delle isole dell'Oceano Indiano. Li vediamo ogni giorno qui alle Seychelles, dove viviamo e lavoriamo. Brillante, intraprendente e perfettamente adattato alla vita insulare &mdash; il fody ci ? sembrato il simbolo naturale di uno studio che crea software intelligente e leggero da una base tropicale, al servizio di clienti in tutto il mondo."
   },
   "contact": {
     "title": "Contatti &mdash; Fody Labs",
@@ -70,7 +72,7 @@
     "intro": "Avete un progetto? Scriveteci &mdash; vi rispondiamo.",
     "emailTitle": "Email",
     "locationTitle": "Dove siamo",
-    "locationText": "Lavoriamo in tutto il mondo, con sede in Europa",
+    "locationText": "Lavoriamo in tutto il mondo, con sede alle Seychelles",
     "responseTitle": "Tempo di risposta",
     "responseText": "Di solito entro 24 ore",
     "formName": "Nome",

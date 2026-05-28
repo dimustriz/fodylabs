@@ -60,7 +60,9 @@
     "timeline2005": "Umstieg auf .NET &mdash; WinForms, WPF, ASP.NET",
     "timeline2015": "Erste Mobilprojekte mit Xamarin",
     "timeline2022": "Umstieg auf .NET MAUI f?r plattform?bergreifende mobile Entwicklung",
-    "timeline2024": "KI-Tools fest im t?glichen Entwicklungsablauf verankert"
+    "timeline2024": "KI-Tools fest im t?glichen Entwicklungsablauf verankert",
+    "fodyTitle": "Warum Fody?",
+    "fodyText": "Der Fody ist ein kleiner, farbenpr?chtiger Vogel, der auf den Inseln des Indischen Ozeans heimisch ist. Wir sehen ihn jeden Tag hier auf den Seychellen, wo wir leben und arbeiten. Leuchtend, einfallsreich und perfekt ans Inselleben angepasst &mdash; der Fody passte einfach zu einem Studio, das smarte, leichtgewichtige Software von einer tropischen Basis aus f?r Kunden weltweit entwickelt."
   },
   "contact": {
     "title": "Kontakt &mdash; Fody Labs",
@@ -70,7 +72,7 @@
     "intro": "Sie haben ein Projekt? Schreiben Sie uns &mdash; wir melden uns.",
     "emailTitle": "E-Mail",
     "locationTitle": "Standort",
-    "locationText": "Weltweit t?tig, Sitz in Europa",
+    "locationText": "Weltweit t?tig, Sitz auf den Seychellen",
     "responseTitle": "Antwortzeit",
     "responseText": "In der Regel innerhalb von 24 Stunden",
     "formName": "Name",
