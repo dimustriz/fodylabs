@@ -1,6 +1,6 @@
 ---
 import LanguageSwitcher from '../components/LanguageSwitcher.astro';
-import { getLangFromUrl, t, localePath } from '../i18n/index';
+import { getLangFromUrl, t, localePath, locales } from '../i18n/index';
 
 interface Props {
   title: string;
@@ -10,6 +10,20 @@ interface Props {
 const lang = getLangFromUrl(Astro.url);
 const i = t(lang);
 const { title, description = i.home.heroDesc } = Astro.props;
+
+// Decode HTML entities for use in meta tags (attributes get double-escaped)
+const decodeEntities = (s: string) => s
+  .replace(/&mdash;/g, '—')
+  .replace(/&rsquo;/g, '\u2019')
+  .replace(/&amp;/g, '&');
+const metaTitle = decodeEntities(title);
+const metaDesc = decodeEntities(description);
+
+const site = 'https://fodylabs.com';
+const pathSegments = Astro.url.pathname.split('/').filter(Boolean);
+const pathWithoutLang = locales.includes(pathSegments[0]) ? '/' + pathSegments.slice(1).join('/') : Astro.url.pathname;
+const canonicalPath = lang === 'en' ? pathWithoutLang : `/${lang}${pathWithoutLang}`;
+const canonicalURL = new URL(canonicalPath, site).href.replace(/\/+$/, '') || site;
 ---
 
 <!doctype html>
@@ -17,7 +31,24 @@ const { title, description = i.home.heroDesc } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content={description} />
+    <meta name="description" content={metaDesc} />
+    <link rel="canonical" href={canonicalURL} />
+    {locales.map((l) => {
+      const href = l === 'en'
+        ? new URL(pathWithoutLang, site).href.replace(/\/+$/, '') || site
+        : new URL(`/${l}${pathWithoutLang}`, site).href.replace(/\/+$/, '');
+      return <link rel="alternate" hreflang={l} href={href} />;
+    })}
+    <link rel="alternate" hreflang="x-default" href={new URL(pathWithoutLang, site).href.replace(/\/+$/, '') || site} />
+    <meta property="og:title" content={metaTitle} />
+    <meta property="og:description" content={metaDesc} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={`${site}/fodylabs-icon.png`} />
+    <meta property="og:locale" content={lang} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={metaTitle} />
+    <meta name="twitter:description" content={metaDesc} />
     <link rel="icon" type="image/png" href="/fodylabs-icon.png" />
     <title>{title}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />

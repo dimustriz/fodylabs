@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fodylabs.com/sitemap-index.xml
