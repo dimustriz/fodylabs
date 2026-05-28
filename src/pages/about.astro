@@ -1,0 +1,187 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About — Fody Labs" description="Learn about Fody Labs — 25+ years building desktop, web, and mobile software.">
+  <section class="page-hero">
+    <div class="section">
+      <p class="section-label">About Us</p>
+      <h1 class="page-title">Engineering Runs Deep</h1>
+      <p class="section-desc">
+        Since the late 1990s we&rsquo;ve been shipping production software &mdash;
+        from COM/ActiveX components to modern cross-platform mobile apps.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 3rem; padding-bottom: 3rem;">
+    <div class="about-grid">
+      <div>
+        <h2 class="about-heading">Our Story</h2>
+        <p class="about-text">
+          Fody Labs started as a one-person consultancy and grew into a focused
+          engineering studio. Over 25&plus; years we&rsquo;ve worked with startups,
+          enterprises, and everything in between &mdash; always hands-on,
+          always code-first.
+        </p>
+        <p class="about-text">
+          Today we specialize in .NET MAUI mobile development, building apps
+          that feel native on every platform while sharing a single codebase.
+          We combine deep platform knowledge with modern AI tooling to ship
+          faster without cutting corners.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="about-heading">How We Work</h2>
+        <div class="values">
+          <div class="value">
+            <h3>Code-First</h3>
+            <p>We write code, review code, and ship code. No committees, no slide decks.</p>
+          </div>
+          <div class="value">
+            <h3>Lean &amp; Direct</h3>
+            <p>Small team, fast decisions. You talk directly to the engineer building your product.</p>
+          </div>
+          <div class="value">
+            <h3>Ship Early</h3>
+            <p>Working software over documentation. We iterate in short cycles with real builds.</p>
+          </div>
+          <div class="value">
+            <h3>AI-Augmented</h3>
+            <p>We use AI tools daily to accelerate development &mdash; not replace engineering judgment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-bottom: 4rem;">
+    <h2 class="section-title">Timeline</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="timeline-year">1999</span>
+        <p>Started building desktop applications with Delphi and C++</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">2005</span>
+        <p>Transitioned to .NET ecosystem &mdash; WinForms, WPF, ASP.NET</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">2015</span>
+        <p>First mobile projects with Xamarin</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">2022</span>
+        <p>Adopted .NET MAUI for cross-platform mobile development</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">2024</span>
+        <p>Integrated AI tooling into daily engineering workflow</p>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    background:
+      radial-gradient(ellipse at 30% 0%, var(--color-accent-glow) 0%, transparent 50%),
+      var(--color-bg);
+  }
+
+  .page-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+
+  .about-heading {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+  }
+
+  .about-text {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+
+  .values {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .value {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+  }
+
+  .value h3 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+  }
+
+  .value p {
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  /* Timeline */
+  .timeline {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .timeline-item {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .timeline-item:last-child {
+    border-bottom: none;
+  }
+
+  .timeline-year {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    min-width: 3rem;
+    flex-shrink: 0;
+  }
+
+  .timeline-item p {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+</style>
