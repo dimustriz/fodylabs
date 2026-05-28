@@ -61,7 +61,7 @@ const canonicalURL = new URL(canonicalPath, site).href.replace(/\/+$/, '') || si
   <body>
     <nav class="nav">
       <div class="nav-inner">
-        <a href={localePath(lang, '/')} class="logo">Fody Labs</a>
+        <a href={localePath(lang, '/')} class="logo"><img src="/fodylabs-icon.png" alt="" class="logo-icon" />Fody Labs</a>
         <div class="nav-links">
           <a href={localePath(lang, '/')}>{i.nav.home}</a>
           <a href={localePath(lang, '/about')}>{i.nav.about}</a>
@@ -228,6 +228,14 @@ const canonicalURL = new URL(canonicalPath, site).href.replace(/\/+$/, '') || si
     font-weight: 700;
     color: var(--color-text) !important;
     letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .logo-icon {
+    width: 28px;
+    height: 28px;
   }
 
   .nav-links {
