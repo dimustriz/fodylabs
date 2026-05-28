@@ -1,6 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { getLangFromUrl, t } from '../i18n/index';
+import Layout from '../../layouts/Layout.astro';
+import { getLangFromUrl, t, locales, defaultLocale } from '../../i18n/index';
+
+export function getStaticPaths() {
+  return locales.filter(l => l !== defaultLocale).map(lang => ({ params: { lang } }));
+}
 
 const lang = getLangFromUrl(Astro.url);
 const i = t(lang);

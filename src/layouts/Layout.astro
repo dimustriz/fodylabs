@@ -1,14 +1,19 @@
 ---
+import LanguageSwitcher from '../components/LanguageSwitcher.astro';
+import { getLangFromUrl, t, localePath } from '../i18n/index';
+
 interface Props {
   title: string;
   description?: string;
 }
 
-const { title, description = "Desktop, web, mobile – we've mastered them all. Now AI-powered." } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const i = t(lang);
+const { title, description = i.home.heroDesc } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,11 +30,12 @@ const { title, description = "Desktop, web, mobile – we've mastered them all. No
   <body>
     <nav class="nav">
       <div class="nav-inner">
-        <a href="/" class="logo">Fody Labs</a>
+        <a href={localePath(lang, '/')} class="logo">Fody Labs</a>
         <div class="nav-links">
-          <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/contact">Contact</a>
+          <a href={localePath(lang, '/')}>{i.nav.home}</a>
+          <a href={localePath(lang, '/about')}>{i.nav.about}</a>
+          <a href={localePath(lang, '/contact')}>{i.nav.contact}</a>
+          <LanguageSwitcher />
         </div>
         <button class="menu-toggle" aria-label="Toggle menu">
           <span></span>
@@ -40,9 +46,10 @@ const { title, description = "Desktop, web, mobile – we've mastered them all. No
     </nav>
 
     <div class="mobile-menu">
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-      <a href="/contact">Contact</a>
+      <a href={localePath(lang, '/')}>{i.nav.home}</a>
+      <a href={localePath(lang, '/about')}>{i.nav.about}</a>
+      <a href={localePath(lang, '/contact')}>{i.nav.contact}</a>
+      <LanguageSwitcher />
     </div>
 
     <main>
@@ -54,20 +61,20 @@ const { title, description = "Desktop, web, mobile – we've mastered them all. No
         <div class="footer-grid">
           <div>
             <h3 class="footer-brand">Fody Labs</h3>
-            <p class="footer-tagline">25+ years of engineering excellence</p>
+            <p class="footer-tagline">{i.footer.tagline}</p>
           </div>
           <div>
-            <h4 class="footer-heading">Contact</h4>
+            <h4 class="footer-heading">{i.footer.contactHeading}</h4>
             <p><a href="mailto:info@fodylabs.com">info@fodylabs.com</a></p>
           </div>
           <div>
-            <h4 class="footer-heading">Links</h4>
-            <p><a href="/about">About</a></p>
-            <p><a href="/contact">Contact</a></p>
+            <h4 class="footer-heading">{i.footer.linksHeading}</h4>
+            <p><a href={localePath(lang, '/about')}>{i.nav.about}</a></p>
+            <p><a href={localePath(lang, '/contact')}>{i.nav.contact}</a></p>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Fody Labs. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} {i.footer.copyright}</p>
         </div>
       </div>
     </footer>
@@ -79,6 +86,20 @@ const { title, description = "Desktop, web, mobile – we've mastered them all. No
         menu?.classList.toggle('open');
         toggle.classList.toggle('open');
       });
+
+      // Browser language detection (only on first visit)
+      const SUPPORTED = ['en', 'de', 'ru', 'uk', 'es', 'it', 'fr'];
+      if (!sessionStorage.getItem('lang-redirected')) {
+        sessionStorage.setItem('lang-redirected', '1');
+        const path = window.location.pathname;
+        const currentLang = SUPPORTED.find(l => path.startsWith('/' + l + '/') || path === '/' + l) || 'en';
+        if (currentLang === 'en' && path === '/') {
+          const browserLang = navigator.language.split('-')[0];
+          if (SUPPORTED.includes(browserLang) && browserLang !== 'en') {
+            window.location.replace('/' + browserLang + '/');
+          }
+        }
+      }
     </script>
   </body>
 </html>
