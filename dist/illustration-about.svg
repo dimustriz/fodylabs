@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 520" fill="none">
+  <!-- Decorative dots -->
+  <circle cx="240" cy="40" r="3" fill="#6366f1" opacity="0.3"/>
+  <circle cx="260" cy="58" r="2" fill="#6366f1" opacity="0.2"/>
+  <circle cx="220" cy="28" r="2" fill="#6366f1" opacity="0.15"/>
+  <circle cx="20" cy="70" r="2" fill="#6366f1" opacity="0.1"/>
+
+  <!-- Monitor -->
+  <rect x="40" y="60" width="200" height="140" rx="10" stroke="#6366f1" stroke-width="1.5" opacity="0.45"/>
+  <rect x="40" y="60" width="200" height="140" rx="10" fill="#6366f1" opacity="0.03"/>
+  <!-- Code lines -->
+  <rect x="60" y="85" width="60" height="3" rx="1.5" fill="#6366f1" opacity="0.4"/>
+  <rect x="60" y="95" width="100" height="3" rx="1.5" fill="#6366f1" opacity="0.22"/>
+  <rect x="60" y="105" width="80" height="3" rx="1.5" fill="#6366f1" opacity="0.3"/>
+  <rect x="75" y="115" width="90" height="3" rx="1.5" fill="#6366f1" opacity="0.18"/>
+  <rect x="75" y="125" width="70" height="3" rx="1.5" fill="#6366f1" opacity="0.35"/>
+  <rect x="60" y="135" width="50" height="3" rx="1.5" fill="#6366f1" opacity="0.22"/>
+  <rect x="60" y="145" width="110" height="3" rx="1.5" fill="#6366f1" opacity="0.14"/>
+  <rect x="60" y="155" width="40" height="3" rx="1.5" fill="#6366f1" opacity="0.28"/>
+  <rect x="60" y="165" width="85" height="3" rx="1.5" fill="#6366f1" opacity="0.18"/>
+  <!-- Stand -->
+  <rect x="120" y="200" width="40" height="18" fill="#6366f1" opacity="0.12"/>
+  <rect x="100" y="216" width="80" height="4" rx="2" fill="#6366f1" opacity="0.25"/>
+
+  <!-- Card 1 -->
+  <rect x="8" y="260" width="125" height="80" rx="8" stroke="#6366f1" stroke-width="1" opacity="0.35"/>
+  <rect x="8" y="260" width="125" height="80" rx="8" fill="#6366f1" opacity="0.02"/>
+  <rect x="24" y="278" width="50" height="3" rx="1.5" fill="#6366f1" opacity="0.28"/>
+  <rect x="24" y="288" width="80" height="3" rx="1.5" fill="#6366f1" opacity="0.18"/>
+  <rect x="24" y="298" width="65" height="3" rx="1.5" fill="#6366f1" opacity="0.22"/>
+  <rect x="24" y="308" width="40" height="3" rx="1.5" fill="#6366f1" opacity="0.14"/>
+
+  <!-- Card 2 with checkmark -->
+  <rect x="148" y="275" width="125" height="85" rx="8" stroke="#6366f1" stroke-width="1" opacity="0.35"/>
+  <rect x="148" y="275" width="125" height="85" rx="8" fill="#6366f1" opacity="0.02"/>
+  <circle cx="174" cy="310" r="12" stroke="#6366f1" stroke-width="1" opacity="0.3"/>
+  <path d="M169 310l4 4 8-8" stroke="#6366f1" stroke-width="1.5" opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="195" y="303" width="55" height="3" rx="1.5" fill="#6366f1" opacity="0.22"/>
+  <rect x="195" y="313" width="40" height="3" rx="1.5" fill="#6366f1" opacity="0.16"/>
+
+  <!-- Gear -->
+  <circle cx="60" cy="410" r="22" stroke="#6366f1" stroke-width="1.5" opacity="0.25"/>
+  <circle cx="60" cy="410" r="9" stroke="#6366f1" stroke-width="1" opacity="0.25"/>
+  <line x1="60" y1="384" x2="60" y2="392" stroke="#6366f1" stroke-width="2" opacity="0.25"/>
+  <line x1="60" y1="428" x2="60" y2="436" stroke="#6366f1" stroke-width="2" opacity="0.25"/>
+  <line x1="34" y1="410" x2="42" y2="410" stroke="#6366f1" stroke-width="2" opacity="0.25"/>
+  <line x1="78" y1="410" x2="86" y2="410" stroke="#6366f1" stroke-width="2" opacity="0.25"/>
+  <line x1="44.4" y1="394.4" x2="50" y2="400" stroke="#6366f1" stroke-width="2" opacity="0.2"/>
+  <line x1="70" y1="420" x2="75.6" y2="425.6" stroke="#6366f1" stroke-width="2" opacity="0.2"/>
+  <line x1="75.6" y1="394.4" x2="70" y2="400" stroke="#6366f1" stroke-width="2" opacity="0.2"/>
+  <line x1="50" y1="420" x2="44.4" y2="425.6" stroke="#6366f1" stroke-width="2" opacity="0.2"/>
+
+  <!-- Connecting dashes -->
+  <path d="M133 300 L148 308" stroke="#6366f1" stroke-width="0.5" opacity="0.18" stroke-dasharray="3 3"/>
+  <path d="M82 410 L145 380" stroke="#6366f1" stroke-width="0.5" opacity="0.12" stroke-dasharray="3 3"/>
+
+  <!-- Abstract circles -->
+  <circle cx="200" cy="415" r="32" stroke="#6366f1" stroke-width="1" opacity="0.12"/>
+  <circle cx="200" cy="415" r="14" fill="#6366f1" opacity="0.05"/>
+  <circle cx="235" cy="455" r="8" fill="#6366f1" opacity="0.08"/>
+  <circle cx="155" cy="460" r="5" fill="#6366f1" opacity="0.06"/>
+  <circle cx="140" cy="490" r="3" fill="#6366f1" opacity="0.1"/>
+  <circle cx="50" cy="480" r="4" fill="#6366f1" opacity="0.07"/>
+</svg>

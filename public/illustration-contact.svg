@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 520" fill="none">
+  <!-- Decorative dots -->
+  <circle cx="30" cy="35" r="3" fill="#6366f1" opacity="0.25"/>
+  <circle cx="15" cy="55" r="2" fill="#6366f1" opacity="0.15"/>
+  <circle cx="250" cy="45" r="2" fill="#6366f1" opacity="0.2"/>
+  <circle cx="265" cy="70" r="2" fill="#6366f1" opacity="0.12"/>
+
+  <!-- Envelope -->
+  <rect x="40" y="70" width="200" height="130" rx="10" stroke="#6366f1" stroke-width="1.5" opacity="0.45"/>
+  <rect x="40" y="70" width="200" height="130" rx="10" fill="#6366f1" opacity="0.03"/>
+  <path d="M40 80 L140 150 L240 80" stroke="#6366f1" stroke-width="1.5" opacity="0.35" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M40 200 L110 145" stroke="#6366f1" stroke-width="1" opacity="0.2" stroke-linecap="round"/>
+  <path d="M240 200 L170 145" stroke="#6366f1" stroke-width="1" opacity="0.2" stroke-linecap="round"/>
+
+  <!-- Paper/letter peeking out -->
+  <rect x="65" y="50" width="150" height="90" rx="6" stroke="#6366f1" stroke-width="1" opacity="0.2"/>
+  <rect x="65" y="50" width="150" height="90" rx="6" fill="#6366f1" opacity="0.015"/>
+  <rect x="85" y="70" width="70" height="3" rx="1.5" fill="#6366f1" opacity="0.2"/>
+  <rect x="85" y="80" width="100" height="3" rx="1.5" fill="#6366f1" opacity="0.14"/>
+  <rect x="85" y="90" width="55" height="3" rx="1.5" fill="#6366f1" opacity="0.18"/>
+
+  <!-- Chat bubble 1 (left) -->
+  <rect x="15" y="240" width="150" height="70" rx="12" stroke="#6366f1" stroke-width="1" opacity="0.4"/>
+  <rect x="15" y="240" width="150" height="70" rx="12" fill="#6366f1" opacity="0.03"/>
+  <path d="M45 310 L35 325 L60 310" fill="#6366f1" opacity="0.03" stroke="#6366f1" stroke-width="1" opacity="0.4"/>
+  <rect x="35" y="260" width="70" height="3" rx="1.5" fill="#6366f1" opacity="0.3"/>
+  <rect x="35" y="270" width="100" height="3" rx="1.5" fill="#6366f1" opacity="0.2"/>
+  <rect x="35" y="280" width="55" height="3" rx="1.5" fill="#6366f1" opacity="0.25"/>
+
+  <!-- Chat bubble 2 (right) -->
+  <rect x="115" y="340" width="150" height="60" rx="12" stroke="#6366f1" stroke-width="1" opacity="0.35"/>
+  <rect x="115" y="340" width="150" height="60" rx="12" fill="#6366f1" opacity="0.02"/>
+  <path d="M235 400 L245 415 L220 400" fill="#6366f1" opacity="0.02" stroke="#6366f1" stroke-width="1" opacity="0.35"/>
+  <rect x="135" y="358" width="80" height="3" rx="1.5" fill="#6366f1" opacity="0.22"/>
+  <rect x="135" y="368" width="60" height="3" rx="1.5" fill="#6366f1" opacity="0.16"/>
+
+  <!-- Paper plane -->
+  <g transform="translate(200, 230) rotate(-15)" opacity="0.35">
+    <path d="M0 0 L40 15 L10 20 Z" stroke="#6366f1" stroke-width="1.5" fill="#6366f1" fill-opacity="0.06" stroke-linejoin="round"/>
+    <path d="M10 20 L15 35 L22 18" stroke="#6366f1" stroke-width="1" fill="none" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Signal arcs -->
+  <path d="M230 460 A 20 20 0 0 1 250 480" stroke="#6366f1" stroke-width="1" opacity="0.2" fill="none"/>
+  <path d="M222 455 A 30 30 0 0 1 258 488" stroke="#6366f1" stroke-width="1" opacity="0.15" fill="none"/>
+  <path d="M214 450 A 40 40 0 0 1 266 496" stroke="#6366f1" stroke-width="1" opacity="0.1" fill="none"/>
+  <circle cx="240" cy="470" r="4" fill="#6366f1" opacity="0.25"/>
+
+  <!-- Abstract circles -->
+  <circle cx="60" cy="440" r="25" stroke="#6366f1" stroke-width="1" opacity="0.12"/>
+  <circle cx="60" cy="440" r="10" fill="#6366f1" opacity="0.05"/>
+  <circle cx="100" cy="480" r="6" fill="#6366f1" opacity="0.08"/>
+  <circle cx="160" cy="490" r="3" fill="#6366f1" opacity="0.1"/>
+  <circle cx="40" cy="490" r="3" fill="#6366f1" opacity="0.06"/>
+</svg>

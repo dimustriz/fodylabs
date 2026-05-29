@@ -15,70 +15,80 @@ const i = t(lang);
     </div>
   </section>
 
-  <section class="section" style="padding-top: 3rem; padding-bottom: 3rem;">
-    <div class="about-grid">
-      <div>
-        <h2 class="about-heading">{i.about.storyTitle}</h2>
-        <p class="about-text" set:html={i.about.storyP1} />
-        <p class="about-text" set:html={i.about.storyP2} />
-      </div>
+  <div class="page-layout">
+    <div class="page-content">
+      <section style="padding-top: 3rem; padding-bottom: 3rem;">
+        <div class="about-grid">
+          <div>
+            <h2 class="about-heading">{i.about.storyTitle}</h2>
+            <p class="about-text" set:html={i.about.storyP1} />
+            <p class="about-text" set:html={i.about.storyP2} />
+          </div>
 
-      <div>
-        <h2 class="about-heading">{i.about.howTitle}</h2>
-        <div class="values">
-          <div class="value">
-            <h3>{i.about.value1Title}</h3>
-            <p>{i.about.value1Desc}</p>
-          </div>
-          <div class="value">
-            <h3 set:html={i.about.value2Title} />
-            <p>{i.about.value2Desc}</p>
-          </div>
-          <div class="value">
-            <h3>{i.about.value3Title}</h3>
-            <p>{i.about.value3Desc}</p>
-          </div>
-          <div class="value">
-            <h3>{i.about.value4Title}</h3>
-            <p set:html={i.about.value4Desc} />
+          <div>
+            <h2 class="about-heading">{i.about.howTitle}</h2>
+            <div class="values">
+              <div class="value">
+                <h3>{i.about.value1Title}</h3>
+                <p>{i.about.value1Desc}</p>
+              </div>
+              <div class="value">
+                <h3 set:html={i.about.value2Title} />
+                <p>{i.about.value2Desc}</p>
+              </div>
+              <div class="value">
+                <h3>{i.about.value3Title}</h3>
+                <p>{i.about.value3Desc}</p>
+              </div>
+              <div class="value">
+                <h3>{i.about.value4Title}</h3>
+                <p set:html={i.about.value4Desc} />
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section class="section" style="padding-bottom: 4rem;">
-    <h2 class="section-title">{i.about.timelineTitle}</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <span class="timeline-year">1999</span>
-        <p>{i.about.timeline1999}</p>
-      </div>
-      <div class="timeline-item">
-        <span class="timeline-year">2005</span>
-        <p set:html={i.about.timeline2005} />
-      </div>
-      <div class="timeline-item">
-        <span class="timeline-year">2015</span>
-        <p>{i.about.timeline2015}</p>
-      </div>
-      <div class="timeline-item">
-        <span class="timeline-year">2022</span>
-        <p>{i.about.timeline2022}</p>
-      </div>
-      <div class="timeline-item">
-        <span class="timeline-year">2024</span>
-        <p>{i.about.timeline2024}</p>
-      </div>
-    </div>
-  </section>
+      <section style="padding-bottom: 4rem;">
+        <h2 class="section-title">{i.about.timelineTitle}</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-year">1999</span>
+            <p>{i.about.timeline1999}</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2005</span>
+            <p set:html={i.about.timeline2005} />
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2015</span>
+            <p>{i.about.timeline2015}</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2022</span>
+            <p>{i.about.timeline2022}</p>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-year">2024</span>
+            <p>{i.about.timeline2024}</p>
+          </div>
+        </div>
+      </section>
 
-  <section class="section fody-section">
-    <div class="fody-card">
-      <h2 class="about-heading">{i.about.fodyTitle}</h2>
-      <p class="about-text" set:html={i.about.fodyText} />
+      <section class="fody-section">
+        <div class="fody-card">
+          <h2 class="about-heading">{i.about.fodyTitle}</h2>
+          <p class="about-text" set:html={i.about.fodyText} />
+        </div>
+      </section>
     </div>
-  </section>
+
+    <aside class="page-aside">
+      <div class="page-aside-sticky">
+        <img src="/illustration-about.svg" alt="" />
+      </div>
+    </aside>
+  </div>
 </Layout>
 
 <style>
@@ -96,6 +106,47 @@ const i = t(lang);
     letter-spacing: -0.03em;
     line-height: 1.1;
     margin-bottom: 1rem;
+  }
+
+  /* Two-column page layout */
+  .page-layout {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .page-content {
+    min-width: 0;
+  }
+
+  .page-aside {
+    position: relative;
+  }
+
+  .page-aside-sticky {
+    position: sticky;
+    top: 96px;
+    padding-top: 3rem;
+  }
+
+  .page-aside-sticky img {
+    width: 100%;
+    height: auto;
+    opacity: 0.85;
+  }
+
+  @media (max-width: 968px) {
+    .page-layout {
+      grid-template-columns: 1fr;
+      max-width: var(--max-width);
+    }
+    .page-aside {
+      display: none;
+    }
   }
 
   .about-grid {

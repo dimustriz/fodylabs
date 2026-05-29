@@ -19,47 +19,57 @@ const i = t(lang);
     </div>
   </section>
 
-  <section class="section" style="padding-top: 3rem; padding-bottom: 4rem;">
-    <div class="contact-grid">
-      <div class="contact-info">
-        <div class="contact-card">
-          <h3>{i.contact.emailTitle}</h3>
-          <a href="mailto:info@fodylabs.com">info@fodylabs.com</a>
-        </div>
+  <div class="page-layout">
+    <div class="page-content">
+      <section style="padding-top: 3rem; padding-bottom: 4rem;">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-card">
+              <h3>{i.contact.emailTitle}</h3>
+              <a href="mailto:info@fodylabs.com">info@fodylabs.com</a>
+            </div>
 
-        <div class="contact-card">
-          <h3>{i.contact.locationTitle}</h3>
-          <p>{i.contact.locationText}</p>
-        </div>
+            <div class="contact-card">
+              <h3>{i.contact.locationTitle}</h3>
+              <p>{i.contact.locationText}</p>
+            </div>
 
-        <div class="contact-card">
-          <h3>{i.contact.responseTitle}</h3>
-          <p>{i.contact.responseText}</p>
-        </div>
-      </div>
+            <div class="contact-card">
+              <h3>{i.contact.responseTitle}</h3>
+              <p>{i.contact.responseText}</p>
+            </div>
+          </div>
 
-      <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
-        <div class="form-group">
-          <label for="name">{i.contact.formName}</label>
-          <input type="text" id="name" name="name" required autocomplete="name" />
+          <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <div class="form-group">
+              <label for="name">{i.contact.formName}</label>
+              <input type="text" id="name" name="name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">{i.contact.formEmail}</label>
+              <input type="email" id="email" name="email" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="message">{i.contact.formMessage}</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              {i.contact.formSubmit}
+            </button>
+            <p class="form-note">
+              {i.contact.formNote} <a href="mailto:info@fodylabs.com">info@fodylabs.com</a>
+            </p>
+          </form>
         </div>
-        <div class="form-group">
-          <label for="email">{i.contact.formEmail}</label>
-          <input type="email" id="email" name="email" required autocomplete="email" />
-        </div>
-        <div class="form-group">
-          <label for="message">{i.contact.formMessage}</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
-          {i.contact.formSubmit}
-        </button>
-        <p class="form-note">
-          {i.contact.formNote} <a href="mailto:info@fodylabs.com">info@fodylabs.com</a>
-        </p>
-      </form>
+      </section>
     </div>
-  </section>
+
+    <aside class="page-aside">
+      <div class="page-aside-sticky">
+        <img src="/illustration-contact.svg" alt="" />
+      </div>
+    </aside>
+  </div>
 </Layout>
 
 <style>
@@ -77,6 +87,47 @@ const i = t(lang);
     letter-spacing: -0.03em;
     line-height: 1.1;
     margin-bottom: 1rem;
+  }
+
+  /* Two-column page layout */
+  .page-layout {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .page-content {
+    min-width: 0;
+  }
+
+  .page-aside {
+    position: relative;
+  }
+
+  .page-aside-sticky {
+    position: sticky;
+    top: 96px;
+    padding-top: 3rem;
+  }
+
+  .page-aside-sticky img {
+    width: 100%;
+    height: auto;
+    opacity: 0.85;
+  }
+
+  @media (max-width: 968px) {
+    .page-layout {
+      grid-template-columns: 1fr;
+      max-width: var(--max-width);
+    }
+    .page-aside {
+      display: none;
+    }
   }
 
   .contact-grid {
