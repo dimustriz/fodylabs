@@ -24,6 +24,39 @@ const currentPath = Astro.url.pathname.replace(new RegExp(`^/${currentLang}`), '
   </div>
 </div>
 
+<script>
+  (function() {
+    const initLangSwitcher = function() {
+      const switcher = document.querySelector('.lang-switcher');
+      const button = switcher?.querySelector('.lang-btn');
+      
+      if (button && switcher) {
+        button.addEventListener('click', function(e) {
+          e.stopPropagation();
+          switcher.classList.toggle('open');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function() {
+          switcher.classList.remove('open');
+        });
+
+        // Prevent closing when clicking inside dropdown
+        const dropdown = switcher.querySelector('.lang-dropdown');
+        dropdown?.addEventListener('click', function(e) {
+          e.stopPropagation();
+        });
+      }
+    };
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initLangSwitcher);
+    } else {
+      initLangSwitcher();
+    }
+  })();
+</script>
+
 <style>
   .lang-switcher {
     position: relative;
@@ -63,8 +96,7 @@ const currentPath = Astro.url.pathname.replace(new RegExp(`^/${currentLang}`), '
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   }
 
-  .lang-switcher:hover .lang-dropdown,
-  .lang-switcher:focus-within .lang-dropdown {
+  .lang-switcher.open .lang-dropdown {
     display: block;
   }
 
