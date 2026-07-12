@@ -2,6 +2,7 @@
   "nav": {
     "home": "Inicio",
     "about": "Sobre nosotros",
+    "work": "Proyectos",
     "contact": "Contacto"
   },
   "footer": {
@@ -79,6 +80,37 @@
     "formEmail": "Correo electrónico",
     "formMessage": "Mensaje",
     "formSubmit": "Enviar",
-    "formNote": "O escríbanos directamente a"
-  }
+    "formNote": "O escríbanos directamente a"  },
+  "work": {
+    "title": "Proyectos &mdash; Fody Labs",
+    "description": "Conozca Radioller &mdash; la app que desarrollamos para demostrar lo que podemos entregar.",
+    "label": "Proyectos",
+    "pageTitle": "La prueba está en el código",
+    "intro": "La mayoría de los proyectos que entregamos están bajo NDA. Radioller es nuestra demostración abierta &mdash; una app de radio completa, disponible en cuatro tiendas.",
+    "appTagline": "50.000+ emisoras. Una base de código. Cinco plataformas.",
+    "appDesc": "Una app de radio por internet en producción, disponible en cuatro tiendas. Cada funcionalidad se desarrolla una sola vez y se ejecuta de forma nativa en cada plataforma.",
+    "platformsLabel": "Disponible en",
+    "f1Title": "Una base de código, cinco plataformas",
+    "f1Desc": "El mismo código C# funciona en Android, iOS, macOS, Windows y la web. Cada plataforma recibe una experiencia nativa.",
+    "f2Title": "Adaptado a cada pantalla",
+    "f2Desc": "Diseño compacto en móviles, panel dividido en tablets, paneles redimensionables en escritorio. Transición fluida entre retrato y paisaje sin interrumpir la reproducción.",
+    "f3Title": "7 idiomas, sin reinicio",
+    "f3Desc": "Cambie el idioma dentro de la app con efecto inmediato. Inglés, alemán, francés, español, italiano, ruso y ucraniano &mdash; todos integrados.",
+    "f4Title": "Integración profunda con el sistema",
+    "f4Desc": "Pantalla de bloqueo, AirPods, radio del coche, auriculares Bluetooth &mdash; todos los botones multimedia gestionados. El foco de audio sigue las convenciones de cada plataforma.",
+    "f5Title": "Modo oscuro &amp; temas en vivo",
+    "f5Desc": "Modo oscuro y claro completo con detección del sistema, cambiable en tiempo de ejecución sin reiniciar. Cada color, icono y fondo se actualiza instantáneamente.",
+    "f6Title": "50.000+ emisoras, sin internet",
+    "f6Desc": "El catálogo completo está disponible localmente &mdash; busque sin conexión. Filtre por país, género o idioma. Solo el audio necesita conexión.",
+    "stat1Number": "50.000+",
+    "stat1Label": "Emisoras de radio",
+    "stat2Number": "7",
+    "stat2Label": "Idiomas de interfaz",
+    "stat3Number": "5",
+    "stat3Label": "Plataformas, una base de código",
+    "stat4Number": "4",
+    "stat4Label": "Tiendas de apps",
+    "ctaTitle": "¿Le interesa colaborar?",
+    "ctaDesc": "¿Tiene algo en mente? Nos encantaría saber de usted.",
+    "ctaBtn": "Contactar"  }
 }

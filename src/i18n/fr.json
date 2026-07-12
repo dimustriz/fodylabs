@@ -2,6 +2,7 @@
   "nav": {
     "home": "Accueil",
     "about": "À propos",
+    "work": "Projets",
     "contact": "Contact"
   },
   "footer": {
@@ -80,5 +81,38 @@
     "formMessage": "Message",
     "formSubmit": "Envoyer",
     "formNote": "Ou écrivez-nous directement à"
+  },
+  "work": {
+    "title": "Nos projets &mdash; Fody Labs",
+    "description": "Découvrez Radioller &mdash; l&rsquo;app que nous avons construite pour montrer ce que nous savons faire.",
+    "label": "Nos projets",
+    "pageTitle": "La preuve par le code",
+    "intro": "La plupart des projets que nous livrons sont soumis à des NDA. Radioller est notre démonstration ouverte &mdash; une application radio internet complète, disponible sur quatre stores.",
+    "appTagline": "50 000+ stations. Une base de code. Cinq plateformes.",
+    "appDesc": "Une application radio internet en production, disponible sur quatre stores. Chaque fonctionnalité est développée une seule fois et tourne nativement sur chaque plateforme.",
+    "platformsLabel": "Disponible sur",
+    "f1Title": "Une base de code, cinq plateformes",
+    "f1Desc": "Le même code C# fonctionne sur Android, iOS, macOS, Windows et le web. Chaque plateforme bénéficie d&rsquo;une expérience native.",
+    "f2Title": "Adapté à chaque écran",
+    "f2Desc": "Mise en page compacte sur téléphone, vue double panneau sur tablette, volets redimensionnables sur bureau. Transition fluide portrait/paysage sans interruption de lecture.",
+    "f3Title": "7 langues, sans redémarrage",
+    "f3Desc": "Changez la langue dans l&rsquo;application avec un effet immédiat. Anglais, allemand, français, espagnol, italien, russe et ukrainien &mdash; tous intégrés.",
+    "f4Title": "Intégration système profonde",
+    "f4Desc": "Écran de verrouillage, AirPods, autoradio, casques Bluetooth &mdash; tous les boutons média sont pris en charge. La gestion du focus audio suit les conventions de chaque plateforme.",
+    "f5Title": "Mode sombre &amp; thème en direct",
+    "f5Desc": "Mode sombre et clair complet avec détection système, commutable à la volée sans redémarrage. Chaque couleur, icône et arrière-plan se met à jour instantanément.",
+    "f6Title": "50 000+ stations, hors ligne",
+    "f6Desc": "Le catalogue complet est intégré localement &mdash; naviguer et rechercher sans internet. Filtrez par pays, genre ou langue. Seul le flux audio nécessite une connexion.",
+    "stat1Number": "50 000+",
+    "stat1Label": "Stations radio",
+    "stat2Number": "7",
+    "stat2Label": "Langues d&rsquo;interface",
+    "stat3Number": "5",
+    "stat3Label": "Plateformes, une base de code",
+    "stat4Number": "4",
+    "stat4Label": "Stores d&rsquo;applications",
+    "ctaTitle": "Envie de travailler ensemble ?",
+    "ctaDesc": "Vous avez quelque chose en tête ? Nous serions ravis de vous entendre.",
+    "ctaBtn": "Prendre contact"
   }
 }

@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
+    "work": "Work",
     "contact": "Contact"
   },
   "footer": {
@@ -80,5 +81,38 @@
     "formMessage": "Message",
     "formSubmit": "Send Message",
     "formNote": "Or email us directly at"
+  },
+  "work": {
+    "title": "Our Work &mdash; Fody Labs",
+    "description": "See Radioller &mdash; a production cross-platform app we built to demonstrate what we deliver.",
+    "label": "Our Work",
+    "pageTitle": "Built to Prove a Point",
+    "intro": "Most projects we ship are under NDA. Radioller is our open proof-of-work &mdash; a full-featured internet radio app, live on four app stores.",
+    "appTagline": "50,000+ stations. One codebase. Five platforms.",
+    "appDesc": "A production internet radio app, live on four app stores. Every feature is built once and runs natively on every supported platform &mdash; no compromise.",
+    "platformsLabel": "Available on",
+    "f1Title": "One Codebase, Five Platforms",
+    "f1Desc": "The same C# code runs on Android, iOS, macOS, Windows, and the web. Each platform gets a native-feeling experience.",
+    "f2Title": "Adaptive for Every Screen",
+    "f2Desc": "Compact layout on phones, split-panel on tablets, resizable panes on desktop. Smooth reflow between portrait and landscape without losing playback.",
+    "f3Title": "7 Languages, No Restart",
+    "f3Desc": "Switch interface language inside the app with immediate effect. English, German, French, Spanish, Italian, Russian, and Ukrainian &mdash; all built in.",
+    "f4Title": "Deep OS Integration",
+    "f4Desc": "Lock screen controls, AirPods, car stereos, Bluetooth headsets &mdash; every media button handled. Audio focus and ducking follow platform conventions exactly.",
+    "f5Title": "Dark Mode &amp; Live Theming",
+    "f5Desc": "Full dark and light mode with automatic system detection, switchable at runtime without restarting. Every colour, icon, and background updates instantly in one pass.",
+    "f6Title": "50,000+ Stations, Offline",
+    "f6Desc": "The full catalogue is bundled locally &mdash; search and browse without internet. Filter by country, genre, or language. Only the stream needs a connection.",
+    "stat1Number": "50,000+",
+    "stat1Label": "Radio stations",
+    "stat2Number": "7",
+    "stat2Label": "Interface languages",
+    "stat3Number": "5",
+    "stat3Label": "Platforms, one codebase",
+    "stat4Number": "4",
+    "stat4Label": "App stores",
+    "ctaTitle": "Interested in working together?",
+    "ctaDesc": "Have something in mind? We&rsquo;d love to hear from you.",
+    "ctaBtn": "Get in Touch"
   }
 }

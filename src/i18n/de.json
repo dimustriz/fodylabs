@@ -2,6 +2,7 @@
   "nav": {
     "home": "Startseite",
     "about": "Über uns",
+    "work": "Projekte",
     "contact": "Kontakt"
   },
   "footer": {
@@ -80,5 +81,38 @@
     "formMessage": "Nachricht",
     "formSubmit": "Absenden",
     "formNote": "Oder schreiben Sie uns direkt an"
+  },
+  "work": {
+    "title": "Projekte &mdash; Fody Labs",
+    "description": "Entdecken Sie Radioller &mdash; unsere Cross-Platform-App als Demo unserer Möglichkeiten.",
+    "label": "Projekte",
+    "pageTitle": "Beweis in Codeform",
+    "intro": "Die meisten Projekte, die wir ausliefern, unterliegen NDA-Vereinbarungen. Radioller ist unser offener Machbarkeitsnachweis &mdash; eine vollwertige Internet-Radio-App, live in vier App-Stores.",
+    "appTagline": "50.000+ Sender. Eine Codebasis. Fünf Plattformen.",
+    "appDesc": "Eine produktionsreife Internet-Radio-App, live in vier App-Stores. Jede Funktion einmal entwickelt &mdash; nativ auf jeder unterstützten Plattform.",
+    "platformsLabel": "Erhältlich bei",
+    "f1Title": "Eine Codebasis, fünf Plattformen",
+    "f1Desc": "Derselbe C#-Code läuft auf Android, iOS, macOS, Windows und im Web. Jede Plattform bekommt ein natives Erlebnis.",
+    "f2Title": "Für jeden Bildschirm optimiert",
+    "f2Desc": "Kompaktes Layout auf Smartphones, geteiltes Panel auf Tablets, anpassbare Bereiche auf dem Desktop. Sanfter Wechsel zwischen Hoch- und Querformat ohne Unterbrechung der Wiedergabe.",
+    "f3Title": "7 Sprachen, kein Neustart",
+    "f3Desc": "Sprache in der App wechseln &mdash; sofort wirksam. Englisch, Deutsch, Französisch, Spanisch, Italienisch, Russisch und Ukrainisch sind integriert.",
+    "f4Title": "Tiefe Systemintegration",
+    "f4Desc": "Sperrbildschirm, AirPods, Auto-Stereo, Bluetooth-Kopfhörer &mdash; alle Medientasten werden verarbeitet. Audio-Fokus folgt den Plattformkonventionen.",
+    "f5Title": "Dark Mode &amp; Live-Theming",
+    "f5Desc": "Vollständiger Dunkel- und Hellmodus mit automatischer Systemerkennung, zur Laufzeit umschaltbar ohne Neustart. Alle Farben, Icons und Hintergründe aktualisieren sich in einem Zug.",
+    "f6Title": "50.000+ Sender, offline verfügbar",
+    "f6Desc": "Der gesamte Katalog ist lokal gespeichert &mdash; kein Internet zum Stöbern nötig. Filter nach Land, Genre oder Sprache. Nur der Stream benötigt eine Verbindung.",
+    "stat1Number": "50.000+",
+    "stat1Label": "Radiosender",
+    "stat2Number": "7",
+    "stat2Label": "Sprachen",
+    "stat3Number": "5",
+    "stat3Label": "Plattformen, eine Codebasis",
+    "stat4Number": "4",
+    "stat4Label": "App-Stores",
+    "ctaTitle": "Interesse an einer Zusammenarbeit?",
+    "ctaDesc": "Haben Sie etwas im Sinn? Wir freuen uns, von Ihnen zu hören.",
+    "ctaBtn": "Kontakt aufnehmen"
   }
 }

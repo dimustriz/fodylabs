@@ -1,0 +1,348 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getLangFromUrl, t, localePath, locales, defaultLocale } from '../../i18n/index';
+
+export function getStaticPaths() {
+  return locales.filter(l => l !== defaultLocale).map(lang => ({ params: { lang } }));
+}
+
+const lang = getLangFromUrl(Astro.url);
+const i = t(lang);
+---
+
+<Layout title={i.work.title} description={i.work.description}>
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="section">
+      <p class="section-label">{i.work.label}</p>
+      <h1 class="page-title">{i.work.pageTitle}</h1>
+      <p class="section-desc" set:html={i.work.intro} />
+    </div>
+  </section>
+
+  <!-- App Showcase: Radioller -->
+  <section class="section" style="padding-top: 3rem; padding-bottom: 3rem;">
+    <div class="app-card">
+      <div class="app-header">
+        <div class="app-header-top">
+          <h2 class="app-name">Radioller</h2>
+          <a href="https://radioller.com/" target="_blank" rel="noopener noreferrer" class="app-visit">radioller.com
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 3.5h5v5M8.5 3.5 3 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <p class="app-tagline">{i.work.appTagline}</p>
+      </div>
+      <p class="app-desc" set:html={i.work.appDesc} />
+      <div class="platforms-row">
+        <span class="platforms-label">{i.work.platformsLabel}:</span>
+        <div class="store-tags">
+          <span class="store-tag">Google Play</span>
+          <span class="store-tag">App Store</span>
+          <span class="store-tag">Mac App Store</span>
+          <span class="store-tag">Microsoft Store</span>
+          <span class="store-tag store-tag-soon">Web (soon)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Highlights -->
+  <section class="section" style="padding-bottom: 3rem;">
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-icon">&#128187;</div>
+        <h3 class="card-title">{i.work.f1Title}</h3>
+        <p class="card-desc">{i.work.f1Desc}</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#128241;</div>
+        <h3 class="card-title">{i.work.f2Title}</h3>
+        <p class="card-desc">{i.work.f2Desc}</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#127760;</div>
+        <h3 class="card-title">{i.work.f3Title}</h3>
+        <p class="card-desc" set:html={i.work.f3Desc} />
+      </div>
+      <div class="card">
+        <div class="card-icon">&#127911;</div>
+        <h3 class="card-title">{i.work.f4Title}</h3>
+        <p class="card-desc">{i.work.f4Desc}</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#127767;</div>
+        <h3 class="card-title" set:html={i.work.f5Title} />
+        <p class="card-desc">{i.work.f5Desc}</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#128225;</div>
+        <h3 class="card-title">{i.work.f6Title}</h3>
+        <p class="card-desc">{i.work.f6Desc}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-section">
+    <div class="section">
+      <div class="stats-grid">
+        <div class="stat">
+          <span class="stat-number">{i.work.stat1Number}</span>
+          <span class="stat-label">{i.work.stat1Label}</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">{i.work.stat2Number}</span>
+          <span class="stat-label">{i.work.stat2Label}</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">{i.work.stat3Number}</span>
+          <span class="stat-label">{i.work.stat3Label}</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">{i.work.stat4Number}</span>
+          <span class="stat-label">{i.work.stat4Label}</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <h2 class="cta-title">{i.work.ctaTitle}</h2>
+      <p class="cta-desc" set:html={i.work.ctaDesc} />
+      <a href={localePath(lang, '/contact')} class="btn btn-primary">{i.work.ctaBtn}</a>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .page-hero {
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+    background:
+      radial-gradient(ellipse at 70% 0%, var(--color-accent-glow) 0%, transparent 55%),
+      var(--color-bg);
+  }
+
+  .page-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+
+  /* App showcase card */
+  .app-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 2.5rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .app-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 40px var(--color-accent-glow);
+  }
+
+  .app-header {
+    margin-bottom: 1.25rem;
+  }
+
+  .app-header-top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.25rem;
+  }
+
+  .app-visit {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    padding: 0.3rem 0.75rem;
+    transition: border-color 0.2s, background 0.2s;
+    white-space: nowrap;
+  }
+
+  .app-visit:hover {
+    color: var(--color-accent-hover);
+    border-color: var(--color-accent);
+    background: var(--color-accent-glow);
+  }
+
+  .app-name {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.25rem;
+  }
+
+  .app-tagline {
+    color: var(--color-accent);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .app-desc {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.75rem;
+    max-width: 680px;
+  }
+
+  .platforms-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .platforms-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+  }
+
+  .store-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .store-tag {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    padding: 0.3rem 0.85rem;
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    font-weight: 500;
+  }
+
+  .store-tag-soon {
+    border-style: dashed;
+    opacity: 0.6;
+  }
+
+  /* Feature grid */
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 900px) {
+    .grid-3 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 580px) {
+    .grid-3 {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .card-icon {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-desc {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* Stats */
+  .stats-section {
+    padding: 4rem 0;
+    background: var(--color-surface);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    margin-top: 1rem;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .stats-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem 1rem;
+    }
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .stat-number {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.4;
+  }
+
+  /* CTA */
+  .cta-section {
+    padding: 5rem 1.5rem;
+  }
+
+  .cta-inner {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 3rem 2rem;
+  }
+
+  .cta-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+
+  .cta-desc {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+</style>
