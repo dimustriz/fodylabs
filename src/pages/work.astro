@@ -36,7 +36,7 @@ const i = t(lang);
           <span class="store-tag">App Store</span>
           <span class="store-tag">Mac App Store</span>
           <span class="store-tag">Microsoft Store</span>
-          <span class="store-tag store-tag-soon">Web (soon)</span>
+          <a href="https://radioller.com/app" target="_blank" rel="noopener noreferrer" class="store-tag store-tag-web">Web</a>
         </div>
       </div>
     </div>
@@ -229,9 +229,15 @@ const i = t(lang);
     font-weight: 500;
   }
 
-  .store-tag-soon {
-    border-style: dashed;
-    opacity: 0.6;
+  .store-tag-web {
+    border-color: var(--color-accent, #6c63ff);
+    color: var(--color-accent, #6c63ff);
+    text-decoration: none;
+  }
+
+  .store-tag-web:hover {
+    background: var(--color-accent, #6c63ff);
+    color: #fff;
   }
 
   /* Feature grid */
