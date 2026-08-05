@@ -16,8 +16,10 @@ const i = t(lang);
     <div class="hero-inner">
       <p class="hero-label">{i.home.heroLabel}</p>
       <h1 class="hero-title">
-        {i.home.heroTitle1}<br />
-        <span class="hero-accent">{i.home.heroTitle2}</span>
+        <a href={localePath(lang, '/work')} class="hero-title-link">
+          {i.home.heroTitle1}<br />
+          <span class="hero-accent">{i.home.heroTitle2}</span>
+        </a>
       </h1>
       <p class="hero-desc" set:html={i.home.heroDesc} />
       <div class="hero-actions">
@@ -137,6 +139,11 @@ const i = t(lang);
     letter-spacing: -0.03em;
     line-height: 1.1;
     margin-bottom: 1.5rem;
+  }
+
+  .hero-title-link {
+    text-decoration: none;
+    color: inherit;
   }
 
   .hero-accent {

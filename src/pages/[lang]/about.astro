@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getLangFromUrl, t, locales, defaultLocale } from '../../i18n/index';
+import { getLangFromUrl, t, localePath, locales, defaultLocale } from '../../i18n/index';
 
 export function getStaticPaths() {
   return locales.filter(l => l !== defaultLocale).map(lang => ({ params: { lang } }));
@@ -84,6 +84,10 @@ const i = t(lang);
           <h2 class="about-heading">{i.about.fodyTitle}</h2>
           <p class="about-text" set:html={i.about.fodyText} />
         </div>
+      </section>
+
+      <section style="padding-bottom: 4rem;">
+        <a href={localePath(lang, '/work')} class="btn btn-outline">{i.nav.work} &rarr;</a>
       </section>
     </div>
 
