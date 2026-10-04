@@ -113,5 +113,14 @@
     "stat4Label": "Tiendas de apps",
     "ctaTitle": "¿Le interesa colaborar?",
     "ctaDesc": "¿Tiene algo en mente? Nos encantaría saber de usted.",
-    "ctaBtn": "Contactar"  }
+    "ctaBtn": "Contactar",
+    "rentwfTagline": "Reservas directas + conductores-guías en una sola plataforma.",
+    "rentwfDesc": "Una plataforma de reserva directa para propietarios de villas, coches y chárteres — con un asistente de IA siempre disponible. Además, Rent Taxi — una app de viajes y excursiones para conductores-guías autorizados. Multilingüe, sin comisiones, en tu propio dominio.",
+    "rentwfF1Title": "Asistente de IA 24/7",
+    "rentwfF1Desc": "Responde a cada huésped en su idioma, 24/7, usando solo disponibilidad y reglas reales — y pasa los leads calientes a tu equipo.",
+    "rentwfF2Title": "Sitios instantáneos multilingües",
+    "rentwfF2Desc": "Ocho idiomas, disponibilidad en tiempo real y páginas que cargan incluso con Wi-Fi débil. Hosting incluido.",
+    "rentwfF3Title": "Rent Taxi para conductores-guías",
+    "rentwfF3Desc": "Los conductores-guías autorizados fijan sus propias tarifas y convierten el traslado al aeropuerto en una excursión por la isla — sin comisión del agregador."
+  }
 }

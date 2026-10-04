@@ -114,6 +114,14 @@
     "stat4Label": "App-Stores",
     "ctaTitle": "Interesse an einer Zusammenarbeit?",
     "ctaDesc": "Haben Sie etwas im Sinn? Wir freuen uns, von Ihnen zu hören.",
-    "ctaBtn": "Kontakt aufnehmen"
+    "ctaBtn": "Kontakt aufnehmen",
+    "rentwfTagline": "Direktbuchungen + Fahrer-Guides auf einer Plattform.",
+    "rentwfDesc": "Eine Direktbuchungs-Plattform für Vermieter von Villen, Autos und Chartern — mit einem rund um die Uhr verfügbaren KI-Assistenten. Dazu Rent Taxi — eine Fahrt- und Touren-App für lizenzierte Fahrer-Guides. Mehrsprachig, provisionsfrei, auf Ihrer eigenen Domain.",
+    "rentwfF1Title": "KI-Assistent rund um die Uhr",
+    "rentwfF1Desc": "Beantwortet jede Gästeanfrage in ihrer Sprache, 24/7, nur mit echten Verfügbarkeiten und Regeln — und übergibt heiße Leads an Ihr Team.",
+    "rentwfF2Title": "Mehrsprachige Sofort-Websites",
+    "rentwfF2Desc": "Acht Sprachen, Verfügbarkeit in Echtzeit und Seiten, die auch bei schwachem WLAN laden. Hosting inklusive.",
+    "rentwfF3Title": "Rent Taxi für Fahrer-Guides",
+    "rentwfF3Desc": "Lizenzierte Fahrer-Guides legen ihre Preise selbst fest und machen aus dem Flughafentransfer eine Inseltour — ohne Provision an einen Aggregator."
   }
 }

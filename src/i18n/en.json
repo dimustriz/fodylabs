@@ -114,6 +114,14 @@
     "stat4Label": "App stores",
     "ctaTitle": "Interested in working together?",
     "ctaDesc": "Have something in mind? We&rsquo;d love to hear from you.",
-    "ctaBtn": "Get in Touch"
+    "ctaBtn": "Get in Touch",
+    "rentwfTagline": "Direct bookings + driver-guides, one platform.",
+    "rentwfDesc": "A direct-booking platform for rental owners — villas, cars, charters — with an always-on AI assistant. Plus Rent Taxi, a ride-and-tour app for licensed driver-guides. Multilingual, commission-free, self-hosted on your own domain.",
+    "rentwfF1Title": "Always-on AI assistant",
+    "rentwfF1Desc": "Answers every guest in their language, 24/7, using only real availability and house rules — then hands hot leads to your team.",
+    "rentwfF2Title": "Multilingual, instant sites",
+    "rentwfF2Desc": "Eight languages, real-time availability, and pages that load even on weak Wi-Fi. Hosting included.",
+    "rentwfF3Title": "Rent Taxi for driver-guides",
+    "rentwfF3Desc": "Licensed driver-guides bid their own fares and turn airport transfers into island tours — no aggregator taking a cut."
   }
 }
