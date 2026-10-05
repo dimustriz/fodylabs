@@ -61,7 +61,9 @@
     "timeline2005": "Passage à .NET &mdash; WinForms, WPF, ASP.NET",
     "timeline2015": "Premiers projets mobiles avec Xamarin",
     "timeline2022": "Adoption de .NET MAUI pour le développement mobile multiplateforme",
-    "timeline2024": "Outils d’IA intégrés dans le flux de travail quotidien",    "timeline2026": "Flutter ajouté à la boîte à outils mobile multiplateformes",    "fodyTitle": "Pourquoi Fody ?",
+    "timeline2024": "Outils d’IA intégrés dans le flux de travail quotidien",
+    "timeline2026": "Flutter ajouté à la boîte à outils mobile multiplateformes",
+    "fodyTitle": "Pourquoi Fody ?",
     "fodyText": "Le fody est un petit oiseau coloré originaire des îles de l’océan Indien. Nous les voyons chaque jour ici aux Seychelles, où nous vivons et travaillons. Vif, ingénieux et parfaitement adapté à la vie insulaire &mdash; le fody s’est imposé comme le symbole naturel d’un studio qui crée des logiciels intelligents et légers depuis une base tropicale, au service de clients dans le monde entier."
   },
   "contact": {
@@ -120,6 +122,7 @@
     "rentwfF2Title": "Sites instantanés multilingues",
     "rentwfF2Desc": "Huit langues, disponibilité en temps réel et pages qui se chargent même avec un Wi-Fi faible. Hébergement inclus.",
     "rentwfF3Title": "Rent Taxi pour chauffeurs-guides",
-    "rentwfF3Desc": "Les chauffeurs-guides agréés fixent leurs propres tarifs et transforment le transfert aéroport en excursion sur l’île — sans commission d’agrégateur."
+    "rentwfF3Desc": "Les chauffeurs-guides agréés fixent leurs propres tarifs et transforment le transfert aéroport en excursion sur l’île — sans commission d’agrégateur.",
+    "techLabel": "Technologies"
   }
 }

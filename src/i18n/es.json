@@ -81,7 +81,8 @@
     "formEmail": "Correo electrónico",
     "formMessage": "Mensaje",
     "formSubmit": "Enviar",
-    "formNote": "O escríbanos directamente a"  },
+    "formNote": "O escríbanos directamente a"
+  },
   "work": {
     "title": "Proyectos &mdash; Fody Labs",
     "description": "Conozca Radioller &mdash; la app que desarrollamos para demostrar lo que podemos entregar.",
@@ -121,6 +122,7 @@
     "rentwfF2Title": "Sitios instantáneos multilingües",
     "rentwfF2Desc": "Ocho idiomas, disponibilidad en tiempo real y páginas que cargan incluso con Wi-Fi débil. Hosting incluido.",
     "rentwfF3Title": "Rent Taxi para conductores-guías",
-    "rentwfF3Desc": "Los conductores-guías autorizados fijan sus propias tarifas y convierten el traslado al aeropuerto en una excursión por la isla — sin comisión del agregador."
+    "rentwfF3Desc": "Los conductores-guías autorizados fijan sus propias tarifas y convierten el traslado al aeropuerto en una excursión por la isla — sin comisión del agregador.",
+    "techLabel": "Tecnologías"
   }
 }
