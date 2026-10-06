@@ -136,7 +136,7 @@ const canonicalURL = new URL(canonicalPath, site).href.replace(/\/+$/, '') || si
       }
     </script>
 
-    <script type="application/json" id="fodychat-config">{JSON.stringify({ title: i.chat.title, greeting: i.chat.greeting, placeholder: i.chat.placeholder })}</script>
+    <script type="application/json" id="fodychat-config" set:html={JSON.stringify({ title: i.chat.title, greeting: i.chat.greeting, placeholder: i.chat.placeholder })}></script>
     <script src="https://chat.fodylabs.com/chat-engine.js" is:inline defer></script>
     <script is:inline>
       window.addEventListener('load', function () {
