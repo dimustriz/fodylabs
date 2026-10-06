@@ -136,7 +136,7 @@ const canonicalURL = new URL(canonicalPath, site).href.replace(/\/+$/, '') || si
       }
     </script>
 
-    <script type="application/json" id="fodychat-config">{JSON.stringify({ greeting: i.chat.greeting, placeholder: i.chat.placeholder })}</script>
+    <script type="application/json" id="fodychat-config">{JSON.stringify({ title: i.chat.title, greeting: i.chat.greeting, placeholder: i.chat.placeholder })}</script>
     <script src="https://chat.fodylabs.com/chat-engine.js" is:inline defer></script>
     <script is:inline>
       window.addEventListener('load', function () {
@@ -146,7 +146,7 @@ const canonicalURL = new URL(canonicalPath, site).href.replace(/\/+$/, '') || si
         ChatEngine.mount({
           endpoint: 'https://chat.fodylabs.com/api/chat',
           historyEndpoint: 'https://chat.fodylabs.com/api/history',
-          title: 'FodyChat',
+          title: (cfg && cfg.title) || 'Assistant',
           greeting: (cfg && cfg.greeting) || 'Hi! Ask me anything about Fody Labs — our work, services, and FodyChat.',
           placeholder: (cfg && cfg.placeholder) || 'Ask about Fody Labs…',
           theme: {

@@ -12,6 +12,7 @@
     "copyright": "Fody Labs. Усі права захищено."
   },
   "chat": {
+    "title": "Асистент",
     "greeting": "Привіт! Запитайте мене про Fody Labs — наші роботи, послуги та FodyChat.",
     "placeholder": "Запитайте про Fody Labs…"
   },
@@ -78,7 +79,7 @@
     "intro": "Є проєкт? Напишіть &mdash; ми відповімо.",
     "emailTitle": "Пошта",
     "locationTitle": "Де ми",
-    "locationText": "Працюємо по всьому світу, база на Сейшелах",
+    "locationText": "Працюємо по всьому світу · UTC+4",
     "responseTitle": "Час відповіді",
     "responseText": "Як правило, протягом 24 годин",
     "formName": "Ім'я",

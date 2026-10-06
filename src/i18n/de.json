@@ -12,6 +12,7 @@
     "copyright": "Fody Labs. Alle Rechte vorbehalten."
   },
   "chat": {
+    "title": "Assistent",
     "greeting": "Hallo! Fragen Sie mich alles über Fody Labs — unsere Arbeit, Leistungen und FodyChat.",
     "placeholder": "Fragen Sie zu Fody Labs…"
   },
@@ -78,7 +79,7 @@
     "intro": "Sie haben ein Projekt? Schreiben Sie uns &mdash; wir melden uns.",
     "emailTitle": "E-Mail",
     "locationTitle": "Standort",
-    "locationText": "Weltweit tätig, Sitz auf den Seychellen",
+    "locationText": "Weltweit tätig · UTC+4",
     "responseTitle": "Antwortzeit",
     "responseText": "In der Regel innerhalb von 24 Stunden",
     "formName": "Name",
