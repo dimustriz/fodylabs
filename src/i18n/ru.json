@@ -11,6 +11,10 @@
     "linksHeading": "Ссылки",
     "copyright": "Fody Labs. Все права защищены."
   },
+  "chat": {
+    "greeting": "Привет! Спросите меня о Fody Labs — наши работы, услуги и FodyChat.",
+    "placeholder": "Спросите о Fody Labs…"
+  },
   "home": {
     "title": "Fody Labs &mdash; Разработка ПО",
     "heroLabel": "Студия разработки ПО",

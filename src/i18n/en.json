@@ -11,6 +11,10 @@
     "linksHeading": "Links",
     "copyright": "Fody Labs. All rights reserved."
   },
+  "chat": {
+    "greeting": "Hi! Ask me anything about Fody Labs — our work, services, and FodyChat.",
+    "placeholder": "Ask about Fody Labs…"
+  },
   "home": {
     "title": "Fody Labs &mdash; Software Engineering",
     "heroLabel": "Software Engineering Studio",

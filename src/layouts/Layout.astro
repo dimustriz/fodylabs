@@ -136,16 +136,19 @@ const canonicalURL = new URL(canonicalPath, site).href.replace(/\/+$/, '') || si
       }
     </script>
 
+    <script type="application/json" id="fodychat-config">{JSON.stringify({ greeting: i.chat.greeting, placeholder: i.chat.placeholder })}</script>
     <script src="https://chat.fodylabs.com/chat-engine.js" is:inline defer></script>
     <script is:inline>
       window.addEventListener('load', function () {
         if (!window.ChatEngine) return;
+        var cfg = null;
+        try { cfg = JSON.parse(document.getElementById('fodychat-config').textContent); } catch (e) {}
         ChatEngine.mount({
           endpoint: 'https://chat.fodylabs.com/api/chat',
           historyEndpoint: 'https://chat.fodylabs.com/api/history',
           title: 'FodyChat',
-          greeting: 'Hi! Ask me anything about FodyChat — pricing, embedding, self-host.',
-          placeholder: 'Ask about FodyChat…',
+          greeting: (cfg && cfg.greeting) || 'Hi! Ask me anything about Fody Labs — our work, services, and FodyChat.',
+          placeholder: (cfg && cfg.placeholder) || 'Ask about Fody Labs…',
           theme: {
             '--chat-primary': '#6366f1',
             '--chat-surface': '#12121a',

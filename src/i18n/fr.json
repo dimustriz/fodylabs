@@ -11,6 +11,10 @@
     "linksHeading": "Liens",
     "copyright": "Fody Labs. Tous droits réservés."
   },
+  "chat": {
+    "greeting": "Bonjour ! Demandez-moi tout sur Fody Labs — notre travail, nos services et FodyChat.",
+    "placeholder": "Demandez à propos de Fody Labs…"
+  },
   "home": {
     "title": "Fody Labs &mdash; Développement Logiciel",
     "heroLabel": "Studio de Développement Logiciel",
