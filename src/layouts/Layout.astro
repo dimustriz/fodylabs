@@ -150,13 +150,13 @@ const canonicalURL = new URL(canonicalPath, site).href.replace(/\/+$/, '') || si
           greeting: (cfg && cfg.greeting) || 'Hi! Ask me anything about Fody Labs — our work, services, and FodyChat.',
           placeholder: (cfg && cfg.placeholder) || 'Ask about Fody Labs…',
           theme: {
-            '--chat-primary': '#6366f1',
-            '--chat-surface': '#12121a',
-            '--chat-text': '#e4e4e7',
-            '--chat-bg': '#0a0a0f',
-            '--chat-border': '#1e1e2e',
-            '--chat-user-bg': 'rgba(99,102,241,.18)',
-            '--chat-bot-bg': '#1e1e2e'
+            '--chat-primary': 'var(--color-accent, #6366f1)',
+            '--chat-surface': 'var(--color-surface, #12121a)',
+            '--chat-text': 'var(--color-text, #e4e4e7)',
+            '--chat-bg': 'var(--color-bg, #0a0a0f)',
+            '--chat-border': 'var(--color-border, #1e1e2e)',
+            '--chat-user-bg': 'var(--color-accent-glow, rgba(99,102,241,.15))',
+            '--chat-bot-bg': 'var(--color-border, #1e1e2e)'
           },
           payload: {
             context: [
