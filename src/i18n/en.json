@@ -16,7 +16,7 @@
     "heroLabel": "Software Engineering Studio",
     "heroTitle1": "25+ Years of",
     "heroTitle2": "Engineering Excellence",
-    "heroDesc": "Desktop, web, mobile &mdash; we&rsquo;ve mastered them all. Now AI-powered. We build lightweight, resilient mobile apps with .NET MAUI and Flutter.",
+    "heroDesc": "Web, cloud backends, and AI products &mdash; we build lightweight, resilient software with TypeScript, Cloudflare, and LLMs. Plus cross-platform mobile and desktop apps with .NET MAUI, Blazor, and Flutter.",
     "heroBtn1": "Get in Touch",
     "heroBtn2": "Learn More",
     "islandWorksAlt": "How Island Works",
@@ -24,7 +24,7 @@
     "expertiseTitle": "Full-Spectrum Platform Expertise",
     "expertiseDesc": "One team covering every platform. Native feel, shared knowledge.",
     "mobileTitle": "Mobile",
-    "mobileDesc": "Cross-platform mobile apps with .NET MAUI and Flutter &mdash; native performance on Android and iOS from a single codebase.",
+    "mobileDesc": "Cross-platform mobile and desktop apps with .NET MAUI, Blazor, and Flutter &mdash; one codebase, native feel on Android, iOS, macOS, and Windows.",
     "desktopTitle": "Desktop",
     "desktopDesc": "Windows and macOS desktop applications built with WPF, WinUI, and Mac Catalyst for professional workflows.",
     "webTitle": "Web",
@@ -123,6 +123,8 @@
     "rentwfF2Desc": "Eight languages, real-time availability, and pages that load even on weak Wi-Fi. Hosting included.",
     "rentwfF3Title": "Rent Taxi for driver-guides",
     "rentwfF3Desc": "Licensed driver-guides bid their own fares and turn airport transfers into island tours — no aggregator taking a cut.",
-    "techLabel": "Technologies"
+    "techLabel": "Technologies",
+    "chatTagline": "An embeddable AI support chat that answers from your data.",
+    "chatDesc": "A multi-tenant AI chat widget for any website — paste an FAQ, index documents (RAG), or connect your own search API (tools). The AI answers in the visitor's language, hands off to a human operator on Telegram, Slack, or email, and can self-host on your own Cloudflare with your own keys."
   }
 }

@@ -16,7 +16,7 @@
     "heroLabel": "Studio de Développement Logiciel",
     "heroTitle1": "Plus de 25 ans",
     "heroTitle2": "d’expérience en développement",
-    "heroDesc": "Bureau, web, mobile &mdash; nous avons l'expérience de toutes les plateformes. Aujourd'hui avec l'IA. Nous créons des applications mobiles rapides et fiables avec .NET MAUI et Flutter.",
+    "heroDesc": "Web, backends cloud et produits IA &mdash; nous construisons des logiciels légers et robustes avec TypeScript, Cloudflare et les LLM. Et des apps mobiles et desktop multiplateformes avec .NET MAUI, Blazor et Flutter.",
     "heroBtn1": "Nous contacter",
     "heroBtn2": "En savoir plus",
     "islandWorksAlt": "Comment fonctionne Island",
@@ -24,7 +24,7 @@
     "expertiseTitle": "Toutes les plateformes, une seule équipe",
     "expertiseDesc": "Une équipe &mdash; toutes les plateformes. Qualité native sur chacune d’elles.",
     "mobileTitle": "Mobile",
-    "mobileDesc": "Applications mobiles multiplateformes avec .NET MAUI et Flutter &mdash; performances natives sur Android et iOS à partir d'une base de code unique.",
+    "mobileDesc": "Apps mobiles et desktop multiplateformes avec .NET MAUI, Blazor et Flutter &mdash; une seule base de code, rendu natif sur Android, iOS, macOS et Windows.",
     "desktopTitle": "Bureau",
     "desktopDesc": "Applications de bureau pour Windows et macOS avec WPF, WinUI et Mac Catalyst pour les environnements professionnels.",
     "webTitle": "Web",
@@ -123,6 +123,8 @@
     "rentwfF2Desc": "Huit langues, disponibilité en temps réel et pages qui se chargent même avec un Wi-Fi faible. Hébergement inclus.",
     "rentwfF3Title": "Rent Taxi pour chauffeurs-guides",
     "rentwfF3Desc": "Les chauffeurs-guides agréés fixent leurs propres tarifs et transforment le transfert aéroport en excursion sur l’île — sans commission d’agrégateur.",
-    "techLabel": "Technologies"
+    "techLabel": "Technologies",
+    "chatTagline": "Un chat de support IA intégrable qui répond à partir de vos données.",
+    "chatDesc": "Un widget de chat IA multi-tenant pour tout site — collez une FAQ, indexez des documents (RAG) ou connectez votre API de recherche (tools). L'IA répond dans la langue du visiteur, passe la main à un opérateur (Telegram/Slack/email) et peut s'auto-héberger sur votre Cloudflare avec vos clés."
   }
 }

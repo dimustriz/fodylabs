@@ -16,7 +16,7 @@
     "heroLabel": "Studio für Softwareentwicklung",
     "heroTitle1": "Über 25 Jahre",
     "heroTitle2": "Erfahrung in der Entwicklung",
-    "heroDesc": "Desktop, Web, Mobile &mdash; wir bringen Erfahrung auf allen Plattformen mit. Heute mit KI-Unterstützung. Wir entwickeln schnelle, robuste mobile Apps mit .NET MAUI und Flutter.",
+    "heroDesc": "Web, Cloud-Backends und KI-Produkte &mdash; wir bauen leichtgewichtige, robuste Software mit TypeScript, Cloudflare und LLMs. Dazu plattformübergreifende Mobile- und Desktop-Apps mit .NET MAUI, Blazor und Flutter.",
     "heroBtn1": "Kontakt aufnehmen",
     "heroBtn2": "Mehr erfahren",
     "islandWorksAlt": "So funktioniert Island",
@@ -24,7 +24,7 @@
     "expertiseTitle": "Alle Plattformen aus einer Hand",
     "expertiseDesc": "Ein Team &mdash; alle Plattformen. Native Qualität auf jeder einzelnen.",
     "mobileTitle": "Mobil",
-    "mobileDesc": "Plattformübergreifende mobile Apps mit .NET MAUI und Flutter &mdash; native Leistung auf Android und iOS aus einer einzigen Codebasis.",
+    "mobileDesc": "Plattformübergreifende Mobile- und Desktop-Apps mit .NET MAUI, Blazor und Flutter &mdash; eine Codebasis, natives Gefühl auf Android, iOS, macOS und Windows.",
     "desktopTitle": "Desktop",
     "desktopDesc": "Desktop-Anwendungen für Windows und macOS mit WPF, WinUI und Mac Catalyst für professionelle Arbeitsabläufe.",
     "webTitle": "Web",
@@ -123,6 +123,8 @@
     "rentwfF2Desc": "Acht Sprachen, Verfügbarkeit in Echtzeit und Seiten, die auch bei schwachem WLAN laden. Hosting inklusive.",
     "rentwfF3Title": "Rent Taxi für Fahrer-Guides",
     "rentwfF3Desc": "Lizenzierte Fahrer-Guides legen ihre Preise selbst fest und machen aus dem Flughafentransfer eine Inseltour — ohne Provision an einen Aggregator.",
-    "techLabel": "Technologien"
+    "techLabel": "Technologien",
+    "chatTagline": "Ein einbettbarer KI-Support-Chat, der aus Ihren Daten antwortet.",
+    "chatDesc": "Ein Multi-Tenant-KI-Chat-Widget für jede Website — FAQ einfügen, Dokumente indizieren (RAG) oder die eigene Such-API anbinden (Tools). Die KI antwortet in der Sprache des Besuchers, übergibt an einen Operator (Telegram/Slack/E-Mail) und lässt sich auf eigenem Cloudflare mit eigenen Schlüsseln selbst hosten."
   }
 }

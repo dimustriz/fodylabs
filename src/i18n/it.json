@@ -16,7 +16,7 @@
     "heroLabel": "Studio di Sviluppo Software",
     "heroTitle1": "Oltre 25 anni",
     "heroTitle2": "di esperienza nello sviluppo",
-    "heroDesc": "Desktop, web, mobile &mdash; abbiamo esperienza su tutte le piattaforme. Oggi lavoriamo con l'IA. Creiamo app mobili veloci e affidabili con .NET MAUI e Flutter.",
+    "heroDesc": "Web, backend cloud e prodotti AI &mdash; costruiamo software leggero e robusto con TypeScript, Cloudflare e LLM. E app mobile e desktop multipiattaforma con .NET MAUI, Blazor e Flutter.",
     "heroBtn1": "Contattaci",
     "heroBtn2": "Scopri di più",
     "islandWorksAlt": "Come funziona Island",
@@ -24,7 +24,7 @@
     "expertiseTitle": "Tutte le piattaforme, un unico team",
     "expertiseDesc": "Un team &mdash; tutte le piattaforme. Qualità nativa su ciascuna di esse.",
     "mobileTitle": "Mobile",
-    "mobileDesc": "App mobili multipiattaforma con .NET MAUI e Flutter &mdash; prestazioni native su Android e iOS da un'unica base di codice.",
+    "mobileDesc": "App mobile e desktop multipiattaforma con .NET MAUI, Blazor e Flutter &mdash; un'unica codebase, sensazione nativa su Android, iOS, macOS e Windows.",
     "desktopTitle": "Desktop",
     "desktopDesc": "Applicazioni desktop per Windows e macOS con WPF, WinUI e Mac Catalyst per ambienti di lavoro professionali.",
     "webTitle": "Web",
@@ -123,6 +123,8 @@
     "rentwfF2Desc": "Otto lingue, disponibilità in tempo reale e pagine che si caricano anche con Wi-Fi debole. Hosting incluso.",
     "rentwfF3Title": "Rent Taxi per autisti-guide",
     "rentwfF3Desc": "Gli autisti-guide autorizzati fissano le proprie tariffe e trasformano il transfer aeroportuale in un’escursione sull’isola — senza commissioni dell’aggregatore.",
-    "techLabel": "Tecnologie"
+    "techLabel": "Tecnologie",
+    "chatTagline": "Una chat di supporto AI integrabile che risponde con i tuoi dati.",
+    "chatDesc": "Un widget di chat AI multi-tenant per qualsiasi sito — incolla una FAQ, indicizza documenti (RAG) o collega la tua API di ricerca (tools). L'AI risponde nella lingua del visitatore, passa a un operatore (Telegram/Slack/email) e può self-hostarsi sul tuo Cloudflare con le tue chiavi."
   }
 }

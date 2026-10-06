@@ -16,7 +16,7 @@
     "heroLabel": "Estudio de Desarrollo de Software",
     "heroTitle1": "Más de 25 años",
     "heroTitle2": "de experiencia en desarrollo",
-    "heroDesc": "Escritorio, web, móvil &mdash; tenemos experiencia en todas las plataformas. Hoy trabajamos con IA. Creamos aplicaciones móviles rápidas y robustas con .NET MAUI y Flutter.",
+    "heroDesc": "Web, backends en la nube y productos de IA &mdash; construimos software ligero y resistente con TypeScript, Cloudflare y LLMs. Además, apps móviles y de escritorio multiplataforma con .NET MAUI, Blazor y Flutter.",
     "heroBtn1": "Contactar",
     "heroBtn2": "Más información",
     "islandWorksAlt": "Cómo funciona Island",
@@ -24,7 +24,7 @@
     "expertiseTitle": "Todas las plataformas, un solo equipo",
     "expertiseDesc": "Un equipo &mdash; todas las plataformas. Calidad nativa en cada una de ellas.",
     "mobileTitle": "Móvil",
-    "mobileDesc": "Aplicaciones móviles multiplataforma con .NET MAUI y Flutter &mdash; rendimiento nativo en Android e iOS con una única base de código.",
+    "mobileDesc": "Apps móviles y de escritorio multiplataforma con .NET MAUI, Blazor y Flutter &mdash; una base de código, sensación nativa en Android, iOS, macOS y Windows.",
     "desktopTitle": "Escritorio",
     "desktopDesc": "Aplicaciones de escritorio para Windows y macOS con WPF, WinUI y Mac Catalyst para entornos profesionales.",
     "webTitle": "Web",
@@ -123,6 +123,8 @@
     "rentwfF2Desc": "Ocho idiomas, disponibilidad en tiempo real y páginas que cargan incluso con Wi-Fi débil. Hosting incluido.",
     "rentwfF3Title": "Rent Taxi para conductores-guías",
     "rentwfF3Desc": "Los conductores-guías autorizados fijan sus propias tarifas y convierten el traslado al aeropuerto en una excursión por la isla — sin comisión del agregador.",
-    "techLabel": "Tecnologías"
+    "techLabel": "Tecnologías",
+    "chatTagline": "Un chat de soporte con IA integrable que responde con tus datos.",
+    "chatDesc": "Un widget de chat con IA multi-tenant para cualquier web — pega una FAQ, indexa documentos (RAG) o conecta tu propia API de búsqueda (tools). La IA responde en el idioma del visitante, escala a un operador (Telegram/Slack/email) y puede auto-alojarse en tu propio Cloudflare con tus claves."
   }
 }
