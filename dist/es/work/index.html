@@ -10,6 +10,7 @@
         ChatEngine.mount({
           endpoint: 'https://chat.fodylabs.com/api/chat',
           historyEndpoint: 'https://chat.fodylabs.com/api/history',
+          cookieDomain: '.fodylabs.com',
           title: (cfg && cfg.title) || 'Assistant',
           greeting: (cfg && cfg.greeting) || 'Hi! Ask me anything about Fody Labs — our work, services, and FodyChat.',
           placeholder: (cfg && cfg.placeholder) || 'Ask about Fody Labs…',
