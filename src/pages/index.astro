@@ -12,54 +12,56 @@ const i = t(lang);
     <div class="hero-inner">
       <p class="hero-label">{i.home.heroLabel}</p>
       <h1 class="hero-title">
-        <a href={localePath(lang, '/work')} class="hero-title-link">
-          {i.home.heroTitle1}<br />
-          <span class="hero-accent">{i.home.heroTitle2}</span>
-        </a>
+        {i.home.heroTitle1}<br />
+        <span class="hero-accent">{i.home.heroTitle2}</span>
       </h1>
-      <p class="hero-desc" set:html={i.home.heroDesc} />
+      <p class="hero-desc">{i.home.heroDesc}</p>
       <div class="hero-actions">
-        <a href={localePath(lang, '/contact')} class="btn btn-primary">{i.home.heroBtn1}</a>
-        <a href={localePath(lang, '/about')} class="btn btn-outline">{i.home.heroBtn2}</a>
+        <a href="#products" class="btn btn-primary">{i.home.heroBtn1}</a>
+        <a href={localePath(lang, '/contact')} class="btn btn-outline">{i.home.heroBtn2}</a>
       </div>
     </div>
   </section>
 
-  <!-- Island Works -->
-  <section class="image-section">
-    <div class="image-container">
-      <img src="/island_works.svg" alt={i.home.islandWorksAlt} class="section-image" />
+  <!-- Products -->
+  <section class="section" id="products" style="padding-top: 5rem; padding-bottom: 3rem;">
+    <p class="section-label">{i.home.productsLabel}</p>
+    <h2 class="section-title">{i.home.productsTitle}</h2>
+    <p class="section-desc">{i.home.productsDesc}</p>
+
+    <div class="grid-4" style="margin-top: 2.5rem;">
+      <a class="card card-link" href="https://rent.wf" target="_blank" rel="noopener">
+        <div class="card-icon">&#127958;&#65039;</div>
+        <h3 class="card-title">{i.home.rentTitle}</h3>
+        <p class="card-for">{i.home.rentFor}</p>
+        <p class="card-value">{i.home.rentValue}</p>
+      </a>
+      <a class="card card-link" href="https://taxi.rent.wf" target="_blank" rel="noopener">
+        <div class="card-icon">&#128661;</div>
+        <h3 class="card-title">{i.home.taxiTitle}</h3>
+        <p class="card-for">{i.home.taxiFor}</p>
+        <p class="card-value">{i.home.taxiValue}</p>
+      </a>
+      <a class="card card-link" href="https://chat.fodylabs.com" target="_blank" rel="noopener">
+        <div class="card-icon">&#128172;</div>
+        <h3 class="card-title">{i.home.chatTitle}</h3>
+        <p class="card-for">{i.home.chatFor}</p>
+        <p class="card-value">{i.home.chatValue}</p>
+      </a>
+      <a class="card card-link" href="https://radioller.com" target="_blank" rel="noopener">
+        <div class="card-icon">&#128251;</div>
+        <h3 class="card-title">{i.home.radTitle} <span class="card-badge">{i.home.radBadge}</span></h3>
+        <p class="card-for">{i.home.radFor}</p>
+        <p class="card-value">{i.home.radValue}</p>
+      </a>
     </div>
   </section>
 
-  <!-- Expertise -->
-  <section class="section" style="padding-top: 5rem; padding-bottom: 3rem;">
-    <p class="section-label">{i.home.expertiseLabel}</p>
-    <h2 class="section-title">{i.home.expertiseTitle}</h2>
-    <p class="section-desc">{i.home.expertiseDesc}</p>
-
-    <div class="grid-3" style="margin-top: 2.5rem;">
-      <div class="card">
-        <div class="card-icon">&#128241;</div>
-        <h3 class="card-title">{i.home.mobileTitle}</h3>
-        <p class="card-desc" set:html={i.home.mobileDesc} />
-      </div>
-      <div class="card">
-        <div class="card-icon">&#128421;&#65039;</div>
-        <h3 class="card-title">{i.home.desktopTitle}</h3>
-        <p class="card-desc" set:html={i.home.desktopDesc} />
-      </div>
-      <div class="card">
-        <div class="card-icon">&#127760;</div>
-        <h3 class="card-title">{i.home.webTitle}</h3>
-        <p class="card-desc" set:html={i.home.webDesc} />
-      </div>
-    </div>
-  </section>
-
-  <!-- Stats -->
+  <!-- Trust -->
   <section class="stats-section">
     <div class="section">
+      <h2 class="section-title" style="text-align: center;">{i.home.trustTitle}</h2>
+      <p class="section-desc" style="text-align: center; margin: 0 auto 2.5rem;">{i.home.trustDesc}</p>
       <div class="stats-grid">
         <div class="stat">
           <span class="stat-number">25+</span>
@@ -73,25 +75,25 @@ const i = t(lang);
     </div>
   </section>
 
-  <!-- Tech -->
+  <!-- Tech → value -->
   <section class="section" style="padding-top: 4rem; padding-bottom: 3rem;">
     <p class="section-label">{i.home.techLabel}</p>
     <h2 class="section-title">{i.home.techTitle}</h2>
     <p class="section-desc">{i.home.techDesc}</p>
 
-    <div class="tech-tags" style="margin-top: 2rem;">
-      <span class="tag">TypeScript</span>
-      <span class="tag">Astro</span>
-      <span class="tag">Cloudflare Workers</span>
-      <span class="tag">D1 (SQLite)</span>
-      <span class="tag">Vectorize</span>
-      <span class="tag">LLM / RAG</span>
-      <span class="tag">.NET / C#</span>
-      <span class="tag">.NET MAUI</span>
-      <span class="tag">Blazor</span>
-      <span class="tag">Flutter</span>
-      <span class="tag">ASP.NET</span>
-      <span class="tag">REST APIs</span>
+    <div class="grid-3" style="margin-top: 2.5rem;">
+      <div class="card">
+        <h3 class="card-title">{i.home.techSpeedTitle}</h3>
+        <p class="card-desc">{i.home.techSpeedDesc}</p>
+      </div>
+      <div class="card">
+        <h3 class="card-title">{i.home.techAiTitle}</h3>
+        <p class="card-desc">{i.home.techAiDesc}</p>
+      </div>
+      <div class="card">
+        <h3 class="card-title">{i.home.techMobileTitle}</h3>
+        <p class="card-desc">{i.home.techMobileDesc}</p>
+      </div>
     </div>
   </section>
 
@@ -99,7 +101,7 @@ const i = t(lang);
   <section class="cta-section">
     <div class="cta-inner">
       <h2 class="cta-title">{i.home.ctaTitle}</h2>
-      <p class="cta-desc" set:html={i.home.ctaDesc} />
+      <p class="cta-desc">{i.home.ctaDesc}</p>
       <a href={localePath(lang, '/contact')} class="btn btn-primary">{i.home.ctaBtn}</a>
     </div>
   </section>
@@ -177,6 +179,24 @@ const i = t(lang);
     }
   }
 
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 1024px) {
+    .grid-4 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 640px) {
+    .grid-4 {
+      grid-template-columns: 1fr;
+    }
+  }
+
   .card-icon {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -192,6 +212,40 @@ const i = t(lang);
     color: var(--color-text-muted);
     font-size: 0.9rem;
     line-height: 1.6;
+  }
+
+  .card-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-for {
+    color: var(--color-text);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .card-value {
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .card-badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-accent);
+    background: var(--color-surface);
+    border: 1px solid var(--color-accent);
+    border-radius: 999px;
+    padding: 0.15rem 0.5rem;
+    vertical-align: middle;
   }
 
   .stats-section {
